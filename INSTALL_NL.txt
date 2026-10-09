@@ -1,0 +1,26 @@
+BATTLE RAMPS — INSTALLATIE
+Produced by Homework Ninja Studios
+
+Dit is een Unreal Engine 5.8 C++-project, geen al gecompileerde Mac-app of Windows-exe.
+
+MAC:
+1. Installeer Unreal Engine 5.8 via de Epic Games Launcher.
+2. Installeer Xcode via de Mac App Store als Unreal hierom vraagt.
+3. Download de repository met GitHub Code → Download ZIP en pak het uit.
+4. Open BattleRampsUE.uproject.
+5. Accepteer het bouwen/compileren van de C++-modules als Unreal daarom vraagt.
+6. Druk op Play in Unreal Editor.
+
+WINDOWS:
+1. Installeer Unreal Engine 5.8.
+2. Installeer de C++-toolchain van Visual Studio als Unreal hierom vraagt.
+3. Download en pak de repository uit.
+4. Open BattleRampsUE.uproject, laat de modules bouwen en druk op Play.
+
+BESTURING:
+W/S of pijltjes = rijden; A/D of links/rechts = sturen; Shift = turbo; Space = bal-pulse (duwt alleen de voetbal); J = springen; B = schans; V = camera; 1-5 = autotype; O/P = teams groter/kleiner (1 t/m 5 auto's per team); K = cosmetica kopen; Enter = wedstrijd opnieuw starten.
+
+LET OP:
+Dit is een starterproject met procedurele placeholder-assets. Voor fotorealisme moeten gelicentieerde 3D-auto's, PBR-gras en een gedetailleerd stadion worden geïmporteerd. Zie Docs/REALISM_ASSETS_NL.md.
+
+De code is in deze omgeving niet met Unreal Engine gecompileerd of op echte hardware volledig getest.

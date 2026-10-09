@@ -46,7 +46,7 @@ ABRCarPawn::ABRCarPawn()
         UMaterialInterface* WheelBase=LoadObject<UMaterialInterface>(nullptr,TEXT("/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"));
         if(WheelBase){UMaterialInstanceDynamic* WheelMat=UMaterialInstanceDynamic::Create(WheelBase,Wheel);if(WheelMat){WheelMat->SetVectorParameterValue(TEXT("Color"),FLinearColor(0.018f,0.022f,0.028f));WheelMat->SetVectorParameterValue(TEXT("BaseColor"),FLinearColor(0.018f,0.022f,0.028f));Wheel->SetMaterial(0,WheelMat);}}
     }
-    auto MakeDetail = [this, &Cube](const FName Name, const FVector Loc, const FVector Scale, const FLinearColor Color)
+    auto MakeDetail = [this](const FName Name, const FVector Loc, const FVector Scale, const FLinearColor Color)
     {
         UStaticMeshComponent* Part=CreateDefaultSubobject<UStaticMeshComponent>(Name);
         Part->SetupAttachment(CollisionRoot);

@@ -24,6 +24,10 @@ Dit is de broncode-repository voor het Battle Ramps Unreal Engine 5.8-starterpro
 - Wins, coins en cosmetische aankoop (`K`).
 - Studiovermelding op het HUD.
 
+## Bouw de app op je computer
+
+Bouwscripts staan klaar: [Mac-buildscript](Build_Battle_Ramps_Mac.command), [Windows-buildscript](Build_Battle_Ramps_Windows.bat) en de [Nederlandse bouwgids](Docs/APP_BOUWEN_NL.md). De scripts moeten worden uitgevoerd op een computer waarop Unreal Engine 5.8 en de bijbehorende compiler zijn geïnstalleerd. De bestanden maken geen kant-en-klare app in GitHub zelf.
+
 ## Besturing
 
 | Toets | Actie |

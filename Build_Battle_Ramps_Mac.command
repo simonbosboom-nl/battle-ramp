@@ -21,7 +21,7 @@ find_engine() {
     "/Users/Shared/Epic Games/UE_5.8" \
     "/Users/Shared/Epic Games/UE_5.7" \
     "/Applications/Epic Games/UE_5.8" \
-    "/Applications/Epic Games/UE_5.7"; do
+    "/Applications/Epic Games/UE_5.8"; do
     if [[ -f "$candidate/Engine/Build/BatchFiles/RunUAT.sh" ]]; then
       printf '%s' "$candidate"
       return 0

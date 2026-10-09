@@ -1,0 +1,33 @@
+name: Source project checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Unreal project descriptor JSON
+        run: python3 -m json.tool BattleRampsUE.uproject > /dev/null
+      - name: Check required project files
+        run: |
+          test -f BattleRampsUE.uproject
+          test -f Config/DefaultEngine.ini
+          test -f Config/DefaultGame.ini
+          test -f Source/BattleRampsUE.Target.cs
+          test -f Source/BattleRampsUEEditor.Target.cs
+          test -f Source/BattleRampsUE/BattleRampsUE.Build.cs
+          test -f Source/BattleRampsUE/Private/BattleRampsUEModule.cpp
+          test -f Source/BattleRampsUE/Private/BRCarPawn.cpp
+          test -f Source/BattleRampsUE/Private/BRGameMode.cpp
+      - name: Verify scripts and docs
+        run: |
+          test -f Build_Battle_Ramps_Mac.command
+          test -f Build_Battle_Ramps_Windows.bat
+          test -f Docs/APP_BOUWEN_NL.md
+      - name: Check macOS script syntax
+        run: bash -n Build_Battle_Ramps_Mac.command

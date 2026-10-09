@@ -16,10 +16,6 @@ if exist "C:\Program Files\Epic Games\UE_5.8\Engine\Build\BatchFiles\RunUAT.bat"
   set "UE_ROOT=C:\Program Files\Epic Games\UE_5.8"
   goto found
 )
-if exist "C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\RunUAT.bat" (
-  set "UE_ROOT=C:\Program Files\Epic Games\UE_5.7"
-  goto found
-)
 echo Unreal Engine could not be found automatically.
 echo Install the Engine version from the Epic Games Launcher.
 echo For a custom install location, define UE_ROOT first.

@@ -5,6 +5,7 @@
 #include "BRSupplyDrop.h"
 #include "BRHUD.h"
 #include "Kismet/GameplayStatics.h"
+#include "GameFramework/PlayerController.h"
 #include "Engine/World.h"
 #include "Engine/GameEngine.h"
 #include "Misc/ConfigCacheIni.h"

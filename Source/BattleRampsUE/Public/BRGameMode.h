@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "TimerManager.h"
 #include "BRGameMode.generated.h"
 class ABRCarPawn; class ABRBall; class ABRArenaBuilder;
 UCLASS()

@@ -29,5 +29,5 @@ jobs:
           test -f Build_Battle_Ramps_Mac.command
           test -f Build_Battle_Ramps_Windows.bat
           test -f Docs/APP_BOUWEN_NL.md
-      - name: Check macOS script syntax
+      - name: Check Mac script syntax
         run: bash -n Build_Battle_Ramps_Mac.command

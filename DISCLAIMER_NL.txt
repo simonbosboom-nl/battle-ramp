@@ -1,0 +1,7 @@
+BATTLE RAMPS — DISCLAIMER
+
+Dit is een onafhankelijk fan-/leerproject en is niet verbonden aan of goedgekeurd door Epic Games, Psyonix of Rocket League. Er worden geen officiële Rocket League-assets meegeleverd.
+
+De code en arena zijn bedoeld als startpunt om te leren met Unreal Engine. De auto- en stadionvormen zijn voorlopige geometrie uit de engine. Het project is niet volledig gecompileerd of getest in een echte Unreal-installatie in de omgeving waarin het is gemaakt.
+
+Unreal Engine valt onder de licentievoorwaarden van Epic Games. Externe meshes, texturen, materialen en geluiden die je zelf importeert hebben hun eigen licenties; controleer die voordat je het project deelt of publiceert.

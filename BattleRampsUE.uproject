@@ -1,0 +1,14 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "Battle Ramps - car soccer prototype by Homework Ninja Studios",
+  "Modules": [
+    {
+      "Name": "BattleRampsUE",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": []
+}

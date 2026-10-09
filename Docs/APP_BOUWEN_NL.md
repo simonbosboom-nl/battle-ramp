@@ -2,22 +2,20 @@
 
 **Produced by Homework Ninja Studios**
 
-Deze repository bevat een Unreal Engine C++-starterproject. De scripts hieronder proberen een standalone build te maken op de computer waarop Unreal Engine en de benodigde compiler al zijn geïnstalleerd.
+Deze repository is een Unreal Engine C++-starterproject. De buildscripts proberen op de computer waarop Unreal en de compiler zijn geïnstalleerd een zelfstandige build te maken.
 
 ## MacBook
 
-1. Download deze repository via GitHub → Code → Download ZIP en pak het archief uit.
-2. Installeer de Engine-versie in `BattleRampsUE.uproject` via de Epic Games Launcher.
-3. Installeer Xcode en accepteer de Xcode-licentie als de compiler daarom vraagt.
-4. Open Finder en dubbelklik op `Build_Battle_Ramps_Mac.command`.
-5. Na afloop staat de gecompileerde build, als de build slaagt, in `BuildOutput/Mac`.
+1. Download deze repository via GitHub → Code → Download ZIP en pak het ZIP-bestand uit.
+2. Installeer de Engine-versie die in `BattleRampsUE.uproject` staat via de Epic Games Launcher.
+3. Installeer Xcode en accepteer de Xcode-licentie indien gevraagd.
+4. Open Terminal in de uitgepakte repositorymap en voer uit:
+   ```bash
+   bash ./Build_Battle_Ramps_Mac.command
+   ```
+5. Als packaging slaagt, vind je de build in `BuildOutput/Mac`.
 
-Als macOS de scriptuitvoering blokkeert, open Terminal in de uitgepakte map en voer uit:
-```bash
-bash ./Build_Battle_Ramps_Mac.command
-```
-
-Voor een aangepaste Engine-installatiemap kun je vooraf `UE_ROOT` instellen:
+Als Unreal in een andere map is geïnstalleerd, stel dan eerst `UE_ROOT` in:
 ```bash
 export UE_ROOT="/volledig/pad/naar/UE_5.8"
 bash ./Build_Battle_Ramps_Mac.command
@@ -26,19 +24,15 @@ bash ./Build_Battle_Ramps_Mac.command
 ## Windows
 
 1. Download en pak de repository uit.
-2. Installeer de project-Engine via Epic Games Launcher.
-3. Installeer de Visual Studio C++-toolchain die door die Unreal-versie wordt vereist.
-4. Dubbelklik op `Build_Battle_Ramps_Windows.bat`.
-5. Na een geslaagde build staat de build in `BuildOutput/Windows`.
+2. Installeer Unreal Engine en de door die Engine-versie vereiste Visual Studio C++-toolchain.
+3. Dubbelklik op `Build_Battle_Ramps_Windows.bat`.
+4. Als packaging slaagt, vind je de build in `BuildOutput/Windows`.
 
-## Wat deze scripts niet doen
+## Grenzen
 
-- Ze installeren Unreal Engine of Xcode/Visual Studio niet.
-- Ze bouwen geen Mac-app vanuit Windows of een Windows-game vanuit macOS.
-- Ze downloaden geen externe auto- of stadionassets.
-- Ze garanderen geen geslaagde build: de C++-broncode moet met de passende Unreal Engine worden gecompileerd en eventuele compileerfouten moeten worden opgelost.
-- Ze veranderen placeholder-assets niet in fotorealistische modellen.
+- De scripts installeren Unreal, Xcode of Visual Studio niet.
+- Een Mac-build en een Windows-build moeten op hun respectieve platform (of compatibele buildomgeving) worden gemaakt.
+- De scripts garanderen geen geslaagde build. De C++-broncode moet door de passende Unreal-versie worden gecompileerd en eventuele compilerfouten moeten worden opgelost.
+- Er worden geen fotorealistische auto- of stadionassets meegeleverd. Zie `REALISM_ASSETS_NL.md`.
 
-## Projectnotitie
-
-Deze starter is nog geen geteste commerciële game. Als het verpakken faalt, kopieer dan de eerste rode errorregels uit het buildvenster; dat helpt om de echte compileerfout te vinden.
+De repositorycode is voorbereid, maar is nog niet in Unreal Engine gecompileerd of interactief op echte hardware getest.
